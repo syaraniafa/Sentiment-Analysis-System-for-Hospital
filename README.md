@@ -19,16 +19,19 @@ The first step in building a robust sentiment analysis system is to preprocess t
     Stopwords Removal: Removing common but irrelevant words (e.g., "and", "the") that do not contribute to sentiment classification.
     - **Lemmatization/Stemming**: Reducing words to their base or root form to group similar words together (e.g., "running" becomes "run").
     - **Vectorization**: Converting text into numerical format using methods like TF-IDF (Term Frequency-Inverse Document Frequency) or word embeddings (e.g., Word2Vec, GloVe) for input to machine learning models.
+
 2. **Dataset Partitioning**
 The dataset is split into three parts to ensure the model generalizes well to unseen data:
     - Training Set: 70% of the data is used to train the model.
     - Validation Set: 15% of the data is used to tune hyperparameters and evaluate the model's performance during training.
     - Test Set: 15% of the data is reserved for evaluating the final model's performance.
+
 3. **Model Development**
 The model is constructed based on Table 1 (provided in the project notebook) and is designed to classify the text into corresponding sentiment categories. The architecture may include layers such as:
     - Embedding Layer: Converts each word into dense vectors.
     - Recurrent Layers (LSTM/GRU): Captures the sequential nature of the text data and helps model long-term dependencies in sentiment.
     - Fully Connected Layers: Maps learned features to the final sentiment output.
+
 4. **Model Evaluation and Performance Metrics**
 The performance of the model is assessed on the test set using the following evaluation metrics:
     - Accuracy: The proportion of correct predictions out of all predictions made by the model.
