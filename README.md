@@ -27,7 +27,7 @@ The dataset is split into three parts to ensure the model generalizes well to un
     - Test Set: 15% of the data is reserved for evaluating the final model's performance.
 
 3. **Model Development**
-The model is constructed based on Table 1 (provided in the project notebook) and is designed to classify the text into corresponding sentiment categories. The architecture may include layers such as:
+The model BERT (provided in the project notebook) and is designed to classify the text into corresponding sentiment categories. The architecture may include layers such as:
     - Embedding Layer: Converts each word into dense vectors.
     - Recurrent Layers (LSTM/GRU): Captures the sequential nature of the text data and helps model long-term dependencies in sentiment.
     - Fully Connected Layers: Maps learned features to the final sentiment output.
